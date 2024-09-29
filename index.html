@@ -134,16 +134,24 @@ if (parseInt(gorilla) >= 1) {
 var sequence = '';
 var targetSequence = 'lse';
 var redirectUrl = 'js/admin.html';
+var audio = new Audio('audio/beluga.mp3');
 
 document.addEventListener('keydown', function (event) {
-  var keyPressed = String.fromCharCode(event.keyCode);
-  keyPressed = keyPressed.toLowerCase();
+  var keyPressed = String.fromCharCode(event.keyCode).toLowerCase();
   sequence += keyPressed;
+
+  // Check if the sequence matches 'lse'
   if (sequence === targetSequence) {
-    window.location.href = redirectUrl;
-    sequence = '';
+    // Play the audio
+    audio.play();
+    sequence = ''; // Reset the sequence after playing audio
   } else if (!targetSequence.startsWith(sequence)) {
-    sequence = '';
+    sequence = ''; // Reset if the sequence does not match
+  }
+
+  // Check for F10 key (key code for F10 is 121)
+  if (event.keyCode === 121 && sequence === targetSequence) {
+    window.location.href = redirectUrl;
   }
 });
 </script>
