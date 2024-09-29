@@ -43,4 +43,4 @@ Are you tired of mundane tasks and ordinary routines? GAMBLR is here to shake th
 
 So, while GAMBLR offers a temporary thrill, consider aiming for bigger wins in life. From the halls of power to strategic investments, the world is your playground. Embrace the challenge, take calculated risks, and turn every moment into an exhilarating adventure!
 
-Ready to level up? Let's make it happen.
+Ready to level up? Let's make it happen. Our only peice of advice: don't look at the code.
